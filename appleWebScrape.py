@@ -12,9 +12,11 @@ def eligible(url):
     matches = experience_pattern.findall(qualifications_list)
     if len(matches) == 0:
         title = soup.find('h1', {'class': 'jd__header--title'}).text
+        datePosted = soup.find('time', {'id': 'jobPostDate'}).text
         jobDesc.append("Apple")
         jobDesc.append(title)
         jobDesc.append(url)
+        jobDesc.append(datePosted)
     return jobDesc
 
 def getAppleJobs(sort, numPages=1):
