@@ -13,8 +13,16 @@ def eligible(url):
     if len(matches) == 0:
         title = soup.find('h1', {'class': 'jd__header--title'}).text
         datePosted = soup.find('time', {'id': 'jobPostDate'}).text
+        location_div = soup.find('div', {'id': 'job-location-name'})
+
+        if location_div:
+            locality = location_div.find('span', {'itemprop': 'addressLocality'}).text
+            region = location_div.find('span', {'itemprop': 'addressRegion'}).text
+            country = location_div.find('span', {'itemprop': 'addressCountry'}).text
+        location = locality + ', ' + region + ', ' + country
         jobDesc.append("Apple")
         jobDesc.append(title)
+        jobDesc.append(location)
         jobDesc.append(url)
         jobDesc.append(datePosted)
     return jobDesc

@@ -10,7 +10,7 @@ def main():
     args = parser.parse_args()
 
     data = (getAppleJobs(args.sort, args.pages))
-    headers = ['Company','Title', 'Link','Date Posted']
+    headers = ['Company','Title', 'Location', 'Link','Date Posted']
     table = tabulate(data, headers, tablefmt='pipe')
     with open('output.md', 'w') as file:
         file.write(table)
