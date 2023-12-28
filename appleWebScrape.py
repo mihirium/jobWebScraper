@@ -25,9 +25,9 @@ def eligible(url):
         jobDesc.append(location)
         jobDesc.append(url)
         jobDesc.append(datePosted)
-    return jobDesc
+    return jobDesc 
 
-def getAppleJobs(sort, numPages=1):
+def getAppleJobs(sort="newest", numPages=1):
     appleJobList = []
 
     appleJobURL = "https://jobs.apple.com"
@@ -41,7 +41,6 @@ def getAppleJobs(sort, numPages=1):
         for element in elements_with_class:
             href_content = element.get("href")
             myUrl = appleJobURL + href_content
-            # print("THIS IS THE URL ACCESSING", myUrl)
             myPage = requests.get(myUrl)
             if(myPage.status_code == 200):
                 jobData = eligible(myUrl)
