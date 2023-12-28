@@ -1,13 +1,9 @@
-# Created by Mihir Sangameswar
-
-## This was made to make job searching easier
-
-## Running
-`python3 testWebscrape.py`
-
-## Parameters
-Sort: Can be for relevance or newest. Relevance is on by default.
-PageNum: How many pages you want to scrape. Takes in a number. 1 is by default.
-
-## Example
-`python3 testWebScrape.py --sort newest --pages 3`
+| Company   | Title                                                          | Location                                                  | Link                                                                                                                     | Date Posted   |
+|:----------|:---------------------------------------------------------------|:----------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------|:--------------|
+| Apple     | Senior Software Automation Engineer Apple Services Engineering | Seattle, Washington, United States                        | https://jobs.apple.com/en-us/details/200528846/senior-software-automation-engineer-apple-services-engineering?team=SFTWR | Dec 27, 2023  |
+| Snapchat  | Software Engineer, iOS                                         | London, United Kingdom                                    | https://wd1.myworkdaysite.com/recruiting/snapchat/snap/job/London-United-Kingdom/Software-Engineer--iOS_R0033268         | Dec 26, 2023  |
+| Apple     | Senior Software Engineer - Apple TV Data Platform Team         | Santa Clara Valley (Cupertino), California, United States | https://jobs.apple.com/en-us/details/200529799/senior-software-engineer-apple-tv-data-platform-team?team=SFTWR           | Dec 23, 2023  |
+| Apple     | Engineering Project Manager - SAP Global Systems               | Austin, Texas, United States                              | https://jobs.apple.com/en-us/details/200530873/engineering-project-manager-sap-global-systems?team=SFTWR                 | Dec 22, 2023  |
+| Apple     | Embedded Software Engineer - Thermal Management                | San Diego, California, United States                      | https://jobs.apple.com/en-us/details/200530197/embedded-software-engineer-thermal-management?team=SFTWR                  | Dec 22, 2023  |
+| Apple     | CapEx Program Manager - (India Ops)                            | Santa Clara Valley (Cupertino), California, United States | https://jobs.apple.com/en-us/details/200517916/capex-program-manager-india-ops?team=OPMFG                                | Dec 21, 2023  |
+| Apple     | Senior Site Reliability Engineer                               | Seattle, Washington, United States                        | https://jobs.apple.com/en-us/details/200497945/senior-site-reliability-engineer?team=SFTWR                               | Dec 21, 2023  |

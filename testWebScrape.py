@@ -22,7 +22,7 @@ def main():
     headers = ['Company','Title', 'Location', 'Link','Date Posted']
 
     table = tabulate(sorted_data, headers, tablefmt='pipe')
-    with open('output.md', 'w') as file:
+    with open('README.md', 'w') as file:
         file.write(table)
 
 if __name__ == "__main__":
