@@ -80,6 +80,5 @@ def getSnapJobs(role="Engineering"):
                 jobData = eligible(url)
                 if len(jobData):
                     snapJobList.append(jobData)
+    print("SNAP DONE")
     return snapJobList
-# if __name__ == "__main__":
-#     getSnapJobs()

@@ -46,4 +46,5 @@ def getAppleJobs(sort="newest", numPages=1):
                 jobData = eligible(myUrl)
                 if len(jobData) != 0:
                     appleJobList.append(jobData)
+    print("APPLE DONE")
     return appleJobList
