@@ -23,7 +23,7 @@ def eligible(url):
         jobDesc.append("Apple")
         jobDesc.append(title)
         jobDesc.append(location)
-        jobDesc.append(url)
+        jobDesc.append("[Link](" + url +")")
         jobDesc.append(datePosted)
     return jobDesc 
 

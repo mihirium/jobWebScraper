@@ -49,7 +49,7 @@ def eligible(url):
                 jobDesc.append("Snapchat")
                 jobDesc.append(title)
                 jobDesc.append(location)
-                jobDesc.append(url)
+                jobDesc.append("[Link](" + url +")")
                 jobDesc.append(datePosted)
                 # print(jobDesc)
         else:

@@ -23,7 +23,7 @@ def eligible(url):
         jobDesc.append("Block")
         jobDesc.append(title)
         jobDesc.append(formatted_address)
-        jobDesc.append(url)
+        jobDesc.append("[Link](" + url +")")
         jobDesc.append(date_posted)
     return jobDesc
 
