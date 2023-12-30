@@ -1,0 +1,974 @@
+</section>
+<section class="section section-relative" data-at="section" id="page-block-p8m08351j5g">
+<div class="section-holder-border item-block item-absolute" data-at="section-border"></div>
+<div class="section-holder-overlay item-block item-absolute" data-at="section-overlay"></div>
+<div class="section-block">
+<div class="section-inner section-fit section-relative">
+<div class="widget item-absolute" id="element-119">
+<div class="contents html-widget__text-center full-size" data-at="html">
+<style>
+  .input-container svg {
+      position: absolute;
+      top: 10px;
+      left: 9px;
+      z-index: 8;
+  }
+
+  .major-container {
+      margin-bottom: 9.375rem;
+  }
+
+  p.noData {
+      font-size: 3rem;
+      text-align: left;
+  }
+
+  .filter-text {
+      margin-bottom: 10px;
+  }
+
+  .filter-text p {
+      text-align: left;
+      font-size: 15px;
+      color: #000;
+      letter-spacing: -0.25px;
+  }
+
+  .filter {
+      display: flex;
+      margin-bottom: 1.875rem;
+  }
+
+  .filter.hide.active {
+      display: block !important;
+  }
+
+  .dropdown-btn span {
+      pointer-events: none;
+  }
+
+  .hide {
+      display: none !important;
+  }
+
+  .panel-active {
+      display: block;
+  }
+
+  .dropdown {
+      width: 60%;
+      margin-bottom: 10px;
+      position: relative;
+      margin-right: 25px;
+  }
+
+  .dropdown.open .dropdown-menu {
+      display: block;
+  }
+
+  .dropdown.open .dropdown-btn {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      background: #00c805;
+      color: #fff;
+  }
+
+  .dropdown.open .dropdown-btn::after {
+      content: '';
+  }
+
+  .input-container {
+      width: 100%;
+      position: relative;
+  }
+
+  .input-container input {
+      padding-left: 35px !important;
+  }
+
+  .dropdown-btn,
+  .input-container input {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      font-size: 15px;
+      padding: 10px 25px;
+      background: #fff;
+      border: 1px solid #000;
+      border-radius: 24px;
+  }
+
+  .dropdown-btn::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 24px;
+      top: 0;
+      right: 5px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' preserveAspectRatio='xMidYMid meet' height='10' width='1em' viewBox='0 0 500 500' style='vertical-align: middle;'%3E%3Cg%3E%3Cpath d='M250.978 263.295L111.326 115.643l-72.652 68.714 212.201 224.358 210.463-221.89-72.554-68.818z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+  }
+
+  ul.dropdown-menu:before {
+      content: '';
+      position: absolute;
+      height: 50px;
+      width: 24px;
+      top: 0;
+      right: 5px;
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='white'%20preserveAspectRatio='xMidYMid%20meet'%20height='10'%20width='1em'%20viewBox='0%200%20500%20500'%20style='vertical-align:%20middle;'><g><path%20d='M250.978%20263.295L111.326%20115.643l-72.652%2068.714%20212.201%20224.358%20210.463-221.89-72.554-68.818z'></path></g></svg>");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      pointer-events: none;
+  }
+
+  .dropdown-menu li:first-of-type {
+      border-top-right-radius: 24px;
+      border-top-left-radius: 24px;
+      background: #00c805;
+      color: #fff;
+  }
+
+  .dropdown.open .dropdown-btn::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' preserveAspectRatio='xMidYMid meet' height='10' width='1em' viewBox='0 0 500 500' style='vertical-align: middle;'%3E%3Cg%3E%3Cpath d='M250.978 263.295L111.326 115.643l-72.652 68.714 212.201 224.358 210.463-221.89-72.554-68.818z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .dropdown-btn:active {
+      outline: none;
+      background: #f8fafd;
+  }
+
+  .dropdown-btn:focus {
+      outline: none;
+  }
+
+  .dropdown-btn a {
+      color: inherit;
+      text-decoration: none;
+  }
+
+  .dropdown-menu {
+      text-align: left;
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 100;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 70%;
+      max-height: 70vh;
+      overflow-y: scroll;
+      background-color: #fff;
+      font-size: 15px;
+      border-radius: 4px;
+      border: 1px solid #000;
+      border-top: none;
+  }
+
+  .dropdown-menu li {
+      padding: 15px 25px;
+      border-bottom: 1px solid #f1f6fc;
+      color: #41556c;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+  }
+
+  .dropdown-menu li:last-child {
+      border: 0;
+  }
+
+  .dropdown-menu li a {
+      text-decoration: none;
+      color: #41556c;
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      padding: 20px 15px;
+  }
+
+  .dropdown-menu li label {
+      padding: 20px 0 20px 20px;
+      width: 100%;
+      cursor: pointer;
+  }
+
+  .dropdown-menu li input {
+      margin-right: 20px;
+      display: inline-block;
+      cursor: pointer;
+  }
+
+  .dropdown-menu {
+      position: absolute;
+      top: 1px;
+      left: 0;
+      transform: none;
+      width: 100%;
+      max-height: none;
+      /*padding: 15px 25px;*/
+      border-top-right-radius: 24px;
+      border-top-left-radius: 24px;
+      overflow: visible;
+  }
+
+  .dropdown-menu li:hover {
+      background-color: #00c805;
+      color: #fff;
+  }
+
+  .dropdown-menu li a {
+      padding: 15px 0;
+  }
+
+  .dropdown-menu li label {
+      padding: 10px 0 10px 20px;
+  }
+
+  .accordion p {
+      padding: 32px 0 16px 0;
+      text-align: left;
+      font-size: 24px;
+  }
+
+  .accordion {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      transition: 0.1s;
+      cursor: pointer;
+      justify-content: space-between;
+      text-transform: uppercase;
+      border-top: 1px solid #000;
+  }
+
+  .accordion.active .icon {
+      transform: rotate(180deg);
+  }
+
+  .panel {
+      display: none;
+      /*overflow: hidden;*/
+      transition: max-height 0.1s ease-out;
+  }
+
+  p.job a {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      display: block;
+      margin-bottom: 8px;
+  }
+
+  p.job {
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(12, 11, 49, 0.16);
+  }
+
+  .accordion.active+.panel {
+      display: block;
+      text-align: left;
+      /*padding: 0 20px 20px;*/
+      padding-bottom: 20px !important;
+      color: #353535;
+      border-bottom: 1px solid #e1e1e1;
+  }
+
+  @media only screen and (max-width: 767px) {
+      .filter {
+          flex-direction: column;
+      }
+
+      .dropdown {
+          width: 100%;
+      }
+  }
+
+</style>
+<div class="major-container">
+<div class="filter-text">
+<p>Filter by:</p>
+</div>
+<div class="filter">
+<div class="dropdown">
+<!-- Dropdown button -->
+<div class="dropdown-btn" data-toggle="dropdown" id="drop">
+              All categories
+          </div>
+<!-- Dropdown menu itself - hidden by default -->
+<ul class="dropdown-menu category">
+<li data-filter="all"><span>All categories</span></li>
+</ul>
+</div>
+<div class="dropdown">
+<div class="dropdown-btn" data-toggle="dropdown" id="location">
+              All locations
+          </div>
+<ul class="dropdown-menu locations"></ul>
+</div>
+<div class="input-container">
+<svg fill="none" height="20" viewbox="0 0 19 20" width="19" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.3201 14.7344C11.0741 15.5354 9.5913 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 10.1038 15.1879 12.0179 13.8601 13.446L18.7071 18.293L17.2928 19.7072L12.3201 14.7344ZM14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+<input id="the-filter" placeholder="Search" type="text"/>
+</div>
+</div>
+<p class="noData hide">Sorry, no jobs were found for that criteria.</p>
+<div id="jobs-data"></div>
+</div>
+<script>
+  // (A) WAIT FOR PAGE TO FULLY LOAD
+  window.addEventListener("load", function () {
+      // (B) ATTACH KEY UP LISTENER TO SEARCH BOX
+      document.getElementById("the-filter").addEventListener("keyup", function () {
+          search(this.value);
+      });
+  });
+  var getUrlParameter = function getUrlParameter(sParam) {
+      var sPageURL = window.location.search.substring(1),
+          sURLVariables = sPageURL.split('&'),
+          sParameterName,
+          i;
+      for (i = 0; i < sURLVariables.length; i++) {
+          sParameterName = sURLVariables[i].split('=');
+
+          if (sParameterName[0] === sParam) {
+              return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+          }
+      }
+  };
+  const dataEl = document.getElementById('jobs-data');
+  let menuHtml = document.querySelector('.dropdown-menu');
+  let apiURLs = [
+      'https://api.greenhouse.io/v1/boards/robinhood/jobs',
+      'https://api.greenhouse.io/v1/boards/sherwoodmedia/jobs',
+      ];
+  let ghSource = parseInt(getUrlParameter('gh_src'));
+  const dropdowns = document.querySelectorAll("[data-toggle=dropdown]");
+  const careersPageBucketId = 4288026;
+
+
+  function setupDropdown(dropdownToggle) {
+      const dropdown = {
+          elem: dropdownToggle.parentNode,
+          toggle: dropdownToggle,
+          menu: dropdownToggle.parentNode.querySelector(".dropdown-menu"),
+          isCheckbox: dropdownToggle.parentNode.querySelector('input[type="checkbox"]') !== null
+      };
+
+      // Set the qccessibility attribute
+      dropdown.toggle.setAttribute("aria-haspopup", "true");
+      dropdown.toggle.setAttribute("aria-expanded", "false");
+
+      // Get the hidden menu and set aria attribute
+      dropdown.menu.setAttribute("aria-hidden", "true");
+
+      // Set event listener of the button
+      dropdown.toggle.addEventListener(
+          "click",
+          toggleDropdownHandler.bind(dropdown),
+          false
+      );
+      // Set event listener on every li of the dropdown
+      if (!dropdown.isCheckbox) {
+          dropdown.menu.querySelectorAll('li').forEach(li => {
+              li.addEventListener('click', (e) => {
+
+                  closeMenu(dropdown);
+                  dropdown.toggle.innerHTML = li.innerHTML;
+              });
+          });
+      }
+  }
+
+
+  // Handler click event on the button
+  function toggleDropdownHandler(e) {
+      // e.preventDefault();
+      // Close all the other opened
+      closeAll(this);
+      // If the dropdown is opened
+      if (this.toggle.getAttribute("aria-expanded") === "true") {
+          closeMenu(this);
+      }
+      // If the dropdown is closed
+      else {
+          openMenu(this);
+      }
+  }
+
+  // Close all the dropdowns
+  function closeAll() {
+      dropdowns
+          .forEach((dropdownToggle) => {
+              if (dropdownToggle != event.target) {
+                  const dropdown = {
+                      toggle: dropdownToggle,
+                      menu: dropdownToggle.parentNode.querySelector(".dropdown-menu")
+                  };
+                  closeMenu(dropdown);
+              }
+          });
+  }
+
+  function openMenu(dropdown) {
+      // Aria attributes
+      dropdown.toggle.setAttribute("aria-expanded", "true");
+      dropdown.menu.setAttribute("aria-hidden", "false");
+      // Put the focus on the first element of the dropdown menu
+      dropdown.menu.children[0].focus();
+      // Class list
+      dropdown.toggle.parentNode.classList.add("open");
+
+  }
+
+  function closeMenu(dropdown) {
+      // Aria attributes
+      dropdown.toggle.setAttribute("aria-expanded", "false");
+      dropdown.menu.setAttribute("aria-hidden", "true");
+      // Class list
+      dropdown.toggle.parentNode.classList.remove("open");
+  }
+
+  function toggleMenu(dropdown) {
+      dropdown.toggle.parentNode.classList.toggle("open");
+  }
+
+
+  // Event click outside a dropdown
+  document.addEventListener('click', function (event) {
+      if (!event.target.closest('.dropdown-menu')) {
+          closeAll();
+      }
+  }, false);
+
+
+  let requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+  };
+
+  const result = Promise.all(apiURLs.map(url =>
+      fetch(url, requestOptions)
+          .then(function (res) {
+              return res.json();
+          })
+  ))
+      .then(function (responses) {
+          const combinedData = responses.reduce(function (acc, response) {
+              acc.jobs.push(...response.jobs);
+              return acc;
+          }, { jobs: [] });
+
+          finalObject(combinedData, careersPageBucketId);
+          getLocations();
+          // filters();
+          return buildFAQ();
+      })
+      .catch(function (error) {
+          errorHTML(dataEl, 'Sorry, there was an error. Make sure the URL you entered is correct.');
+      });
+
+
+  function finalObject(data, id) {
+      html = '';
+      let jobs = data.jobs;
+      var array = jobs.reduce(function (r, a) {
+          let metadata = a.metadata.find(element => element.id === id);
+          r[metadata.value] = r[metadata.value] || [];
+          r[metadata.value].push(a);
+          return r;
+      }, Object.create(null));
+      menuHtml.innerHTML = `<li data-filter="all"><span>All Categories</span></li>`;
+
+
+      sorted = Object.keys(array)
+          .sort()
+          .reduce((acc, key) => ({
+              ...acc, [key]: array[key]
+          }), {})
+
+      for (var something in sorted) {
+          // let options = 'All Categories' + something;
+          var sortedReplaced = replaceAll(something.replace(/\s/g, ''), '&', '')
+          menuHtml.innerHTML += `<li data-filter="${sortedReplaced}" onClick="(function() { ga('IPTracker.send', 'event','button','click','${sortedReplaced}');})();"><span>${something}</span></li>`;
+
+          // html += `<p class="hide">No data</p>`
+          html += `
+                          <div class="accordion ${replaceAll(something.replace(/\s/g, ''), '&', '')}" data-filter="${replaceAll(something.replace(/\s/g, ''), '&', '')}">
+                              <p class="question" onClick="(function() { ga('IPTracker.send', 'event','button','click','${sortedReplaced}');})();">${something}</p>
+                              <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+          <path d="M1.70703 8.29274L0.292816 9.70696L8.99992 18.4141L17.707 9.70695L16.2928 8.29274L9.99997 14.5856L9.99997 -3.36886e-07L7.99997 -4.24309e-07L7.99997 14.5857L1.70703 8.29274Z" fill="black"></path>
+          </svg></div>
+        </div>`
+
+          let categ = array[something];
+          html += `<div class="panel ${replaceAll(something.replace(/\s/g, ''), '&', '')}" data-filter="${replaceAll(something.replace(/\s/g, ''), '&', '')}">`
+          let jobs = categ;
+          for (let j = 0; j < jobs.length; j++) {
+              let jobse = jobs[j];
+              let location = jobs[j].location.name;
+              let url;
+              if (ghSource !== undefined) {
+                  // let url =
+                  url = replaceAll(jobs[j].absolute_url, 't=gh_src=', 'gh_src=' + ghSource);
+              } else {
+                  url = jobs[j].absolute_url;
+              }
+
+              jobLocation = replaceAll(location, '&', '');
+              html += `<p class="job" data-location="${jobLocation}"><a href="${url}" target="_blank"> ${jobse.title}</a><span>${location}</span></p>`
+          }
+          html += `</div>`
+
+          dataEl.innerHTML = html
+      }
+  }
+
+  function buildFAQ() {
+      Element.prototype.parents = function (selector) {
+          var elements = [];
+          var elem = this;
+          var ishaveselector = selector !== undefined;
+
+          while ((elem = elem.parentElement) !== null) {
+              if (elem.nodeType !== Node.ELEMENT_NODE) {
+                  continue;
+              }
+
+              if (!ishaveselector || elem.matches(selector)) {
+                  elements.push(elem);
+              }
+          }
+
+          return elements;
+      };
+
+      let container = document.querySelector('.accordion');
+      let section = container.parents('.section')[0];
+      let sectionBlock = container.parents('.section-block')[0];
+      let widgetBlock = container.parents('.widget')[0];
+      widgetBlock.style.top = 'initial';
+      widgetBlock.style.position = 'relative';
+      changeHeight();
+
+      function changeHeight() {
+          widgetBlock.style.height = '100%';
+          widgetBlock.style.zIndex = '100000';
+          section.style.height = '100%';
+          sectionBlock.style.height = '100%';
+      }
+
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+              var panel = this.nextElementSibling;
+
+              this.classList.toggle("active");
+
+              if (panel.classList.contains('panel-active')) {
+                  panel.classList.remove('panel-active')
+              } else {
+                  panel.classList.add('panel-active')
+              }
+              changeHeight();
+
+          });
+      }
+
+  }
+
+  function getLocations() {
+      let locationMenu = document.querySelector('.locations');
+      html = '';
+      locationMenu.innerHTML = `<li data-location="all"><span>All locations</span></li>`;
+      const locationURLs = [
+          'https://api.greenhouse.io/v1/boards/robinhood/offices',
+          'https://api.greenhouse.io/v1/boards/sherwoodmedia/offices',
+      ];
+
+      json(locationURLs).then(data => {
+          let locations = [];
+          data.forEach(item => {
+              if (item.offices) {
+                  locations.push(...item.offices);
+              } else if (item.departments) {
+                  locations.push(...item.departments);
+              }
+          });
+
+          let uniqueLocations = Array.from(new Set(locations.map(location => location.name)));
+
+          let processedUSRemoteLocation = false;
+          for (let i = 0; i < uniqueLocations.length; i++) {
+              let location = uniqueLocations[i];
+              if (location === '[ProspectLand]' || location === 'No Office') {
+                  continue;
+              }
+
+              if (location.includes("US, Remote")) {
+                  if (processedUSRemoteLocation) {
+                      continue;
+                  } else {
+                      processedUSRemoteLocation = true;
+                      locationMenu.innerHTML += `<li data-location="US, Remote"><span>US, Remote</span></li>`;
+                  }
+                  continue;
+              }
+
+              locationMenu.innerHTML += `<li data-location="${replaceAll(location, '&', '')}"><span>${location}</span></li>`;
+          }
+
+          filters();
+      });
+  }
+
+
+  function filters() {
+      const filters = document.querySelectorAll('.dropdown-menu.category li');
+      const locationFilters = document.querySelectorAll('.dropdown-menu.locations li');
+
+      locationFilters.forEach(filter => {
+
+          filter.addEventListener('click', function () {
+              let selectedFilter = filter.getAttribute('data-location');
+              var lastCommaIndex = selectedFilter.lastIndexOf(",");
+              if (selectedFilter.includes("US, Remote")) {
+                  selectedFilter = "Remote"
+              } else if (selectedFilter.split(" ").length > 1) {
+                  selectedFilter = selectedFilter.substr(0, lastCommaIndex);
+              }
+
+              let itemsToShow = [];
+              let itemsToHide = document.querySelectorAll(`.job:not([data-location='${selectedFilter}'])`);
+              document.querySelectorAll(`[data-location]`).forEach(el => {
+                  if (el.getAttribute('data-location').indexOf(selectedFilter) >= 0) {
+                      let mainFilterText = replaceAll(document.getElementById('drop').innerText.replace(/\s/g, ''), '&', '')
+                      if (mainFilterText.toLowerCase() === 'allcategories') {
+                          itemsToShow.push(el.parentElement.previousElementSibling)
+                      } else {
+                          arrayRemove(itemsToShow, el.parentElement.previousElementSibling)
+                      }
+                      itemsToShow.push(el)
+
+                  }
+
+              });
+              if (selectedFilter === 'all') {
+                  itemsToHide = [];
+
+                  itemsToShow = document.querySelectorAll('[data-location]');
+              }
+
+              itemsToHide.forEach(el => {
+                  el.classList.add('hide');
+                  el.classList.remove('active');
+              });
+
+              itemsToShow.forEach(el => {
+                  // itemsToShow[1].click();
+                  el.classList.remove('hide');
+                  el.classList.add('active');
+              });
+              let activejobs = document.querySelectorAll(`.job.active`);
+              if (activejobs.length === 0) {
+                  document.querySelector('p.noData.hide').classList.remove('hide')
+                  document.querySelector('#jobs-data').classList.add('hide')
+              } else {
+                  document.querySelector('p.noData').classList.add('hide')
+                  document.querySelector('#jobs-data').classList.remove('hide')
+              }
+              let text = replaceAll(document.getElementById('drop').innerText.replace(/\s/g, ''), '&', '');
+              if (selectedFilter === 'all' && text.toLowerCase() === 'allcategories') {
+                  let allAccordions = document.querySelectorAll('.accordion');
+                  allAccordions.forEach(accordion => {
+                      accordion.classList.remove('active')
+                  });
+              }
+          });
+      });
+
+
+      filters.forEach(filter => {
+
+          filter.addEventListener('click', function () {
+              let selectedFilter = filter.getAttribute('data-filter');
+              let itemsToHide = document.querySelectorAll(`.accordion:not([data-filter='${selectedFilter.replace(/\s/g, '')}'])`);
+              let itemsToShow = document.querySelectorAll(`[data-filter='${selectedFilter.replace(/\s/g, '')}']`);
+
+              if (selectedFilter === 'all') {
+                  itemsToHide = [];
+                  itemsToShow = document.querySelectorAll('[data-filter]');
+
+              }
+
+              itemsToHide.forEach(el => {
+                  el.classList.add('hide');
+                  el.classList.remove('active');
+              });
+
+              itemsToShow.forEach(el => {
+                  // itemsToShow[1].click();
+                  el.classList.remove('hide');
+                  el.classList.add('active');
+              });
+              let location = document.getElementById('location').innerText;
+              if (selectedFilter === 'all' && location === "All locations") {
+                  let allAccordions = document.querySelectorAll('.accordion');
+                  allAccordions.forEach(accordion => {
+                      accordion.classList.remove('active')
+                  });
+              }
+
+
+              let activejobs = document.querySelectorAll(`.job.active`);
+          });
+      });
+
+      dropdowns.forEach(setupDropdown);
+  }
+
+  function json(urls) {
+      const requests = urls.map(url => fetch(url).then(res => res.json()));
+      return Promise.all(requests).then(responses => responses.flatMap(response => response));
+  }
+
+
+  function arrayRemove(arr, value) {
+
+      return arr.filter(function (ele) {
+          return ele != value;
+      });
+  }
+
+  function replaceAll(str, find, replace) {
+      var escapedFind = find.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+      return str.replace(new RegExp(escapedFind, 'g'), replace);
+  }
+
+  function search(item) {
+      // (C) GET THE SEARCH TERM
+      var search = item.toLowerCase();
+
+      // (D) GET ALL LIST ITEMS
+
+      let text = replaceAll(document.getElementById('drop').innerText.replace(/\s/g, ''), '&', '');
+      let location = document.getElementById('location').innerText;
+
+      if (location === "All locations" || location === 'Remote') {
+
+      } else {
+          var lastCommaIndex = location.lastIndexOf(",");
+          location = location.substr(0, lastCommaIndex);
+      }
+
+      var all;
+      if (text.toLowerCase() === 'allcategories' && location === 'All locations') {
+          all = document.querySelectorAll("#jobs-data .panel p");
+      } else if (text.toLowerCase() === 'allcategories' && location !== 'All locations') {
+          all = document.querySelectorAll('#jobs-data .panel p[data-location*="' + location + '"]');
+      } else if (text.toLowerCase() !== 'allcategories' && location !== 'All locations') {
+          all = document.querySelectorAll('#jobs-data .panel.' + text + ' p[data-location*="' + location + '"]');
+      } else {
+          all = document.querySelectorAll("#jobs-data .panel." + text + " p");
+      }
+
+
+      let itemstoShow = [];
+      // (E) LOOP THROUGH LIST ITELS - ONLY SHOW ITEMS THAT MATCH SEARCH
+      let itemsToHide = [];
+      for (let i of all) {
+          let item = i.innerText.toLowerCase();
+          let childrens = Array.from(i.parents('.panel')[0].children);
+          if (item.indexOf(search) > -1) {
+              i.classList.remove("hide");
+              itemstoShow.push(i);
+          } else {
+              i.classList.add("hide");
+              itemsToHide.push(i);
+
+          }
+
+      }
+      itemsToHide.forEach(el => {
+          el.parents('.panel')[0].previousElementSibling.classList.add('hide');
+          el.parents('.panel')[0].previousElementSibling.classList.remove('active');
+      });
+      itemstoShow.forEach(el => {
+          el.parents('.panel')[0].previousElementSibling.classList.remove('hide');
+          el.parents('.panel')[0].previousElementSibling.classList.add('active');
+      });
+
+      if (itemstoShow.length < 1) {
+          document.querySelector('p.noData').classList.remove('hide')
+      } else {
+
+          document.querySelector('p.noData').classList.add('hide')
+      }
+      if (search === '' && text.toLowerCase() === 'allcategories' && location === 'All locations') {
+          let allAccordions = document.querySelectorAll('.accordion');
+          allAccordions.forEach(accordion => {
+              accordion.classList.remove('active')
+          });
+      }
+      // else if (search === '' && text.toLowerCase() !== 'allcategories' && location === 'All locations') {
+      //     let allAccordions = document.querySelectorAll('.accordion.'+text);
+      //     allAccordions.forEach(accordion => {
+      //         accordion.classList.remove('active')
+      //     });
+      // }
+      // filters();
+  }
+</script>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section section-relative" data-at="section" id="page-block-ea6b90q2xp">
+<div class="section-holder-border item-block item-absolute" data-at="section-border"></div>
+<div class="section-holder-overlay item-block item-absolute" data-at="section-overlay"></div>
+<div class="section-block">
+<div class="section-inner section-fit section-relative">
+<div class="widget item-absolute paragraph" data-at="paragraph" id="element-213">
+<div class="contents">
+<p class="x_aa87b8ff x_1bfd115e"><span class="x_7b2817bf">Don’t see the role that you’re looking for?</span></p>
+</div>
+</div>
+<div class="widget item-absolute paragraph" data-at="paragraph" id="element-214">
+<div class="contents">
+<p class="x_190a7a83 x_a2e00130"><span class="x_7b2817bf">Stay up to date on the latest happenings at Robinhood and get notified when we post new job opportunities that match your interests.</span></p>
+</div>
+</div>
+<div class="widget item-absolute" id="element-215">
+<a class="url-link btn item-block" data-at="button" data-link-tqggsg6k0d="" href="https://www.gem.com/form?formID=1ebc409f-d44e-4696-ad94-583122ab6df8" id="link-tqggsg6k0d" target="_blank">
+      Join Our Talent Community
+  </a>
+</div>
+</div>
+</div>
+</section>
+<section class="section section-relative" data-at="section" id="page-block-g280yw2jtuw">
+<div class="section-holder-border item-block item-absolute" data-at="section-border"></div>
+<div class="section-holder-overlay item-block item-absolute" data-at="section-overlay"></div>
+<div class="section-block">
+<div class="section-inner section-fit section-relative">
+<div class="widget item-absolute paragraph" data-at="paragraph" id="element-209">
+<div class="contents">
+<p class="x_a79594f1 x_7951f8cb"><span class="x_f2074b6c"><strong>At Robinhood, we take pride in being an Equal Employment Opportunity employer</strong></span></p><p class="x_a79594f1 x_7951f8cb"><span class="x_f2074b6c"><br/></span></p><p class="x_a79594f1 x_7951f8cb"><span class="x_f2074b6c">Robinhood is proud to be an Equal Opportunity employer. We do not discriminate based on race, color, religion, national origin, age, sex, marital status, ancestry, neurotype, physical or mental disability, veteran status, gender identity, sexual orientation or any other category protected by law.</span></p><p class="x_a79594f1 x_7951f8cb"><span class="x_f2074b6c"><br/></span></p><p class="x_a79594f1 x_7951f8cb"><span class="x_f2074b6c">If you need additional assistance throughout the hiring process related to a physical or mental health condition or there is something our team can do to enable a more accessible experience, please notify our team by completing this </span><span class="x_20d14e22"><a class="url-link" data-link-65j6e1js47s="" href="https://robinhood.hracuity.net/webform/index/752875e4-42ba-4dff-9951-fd51e315997e" id="link-65j6e1js47s" target="_blank">Applicant Accommodation Form</a></span><span class="x_f2074b6c">.</span></p><p class="x_a79594f1 x_7951f8cb"><span class="x_f2074b6c"><br/></span></p><p class="x_a79594f1 x_7951f8cb"><span class="x_f2074b6c">Under the Transparency in Coverage act, Robinhood is required to provide pricing information to consumers before they receive care under our insurance plans. To review Robinhood’s medical insurance pricing structure, please click here: </span><a class="url-link" data-link-w0nkuznela="" href="https://transparency-in-coverage.collectivehealth.com/index.html" id="link-w0nkuznela" target="_blank"><span class="x_44f68ecf">https://transparency-in-coverage.collectivehealth.com/index.html</span></a></p><br/><p class="x_a79594f1 x_7951f8cb">To learn more about how we process your personal information and your rights in regards to your personal information as a Robinhood employee, please visit our <a class="download-link" data-link-ousr3gg6dk="" href="//v.fastcdn.co/u/62ba1c13/64434265-0-Robinhood-US-EE-PP.pdf" id="link-ousr3gg6dk">US Employee Privacy Notice</a> or <a class="download-link" data-link-fuklz2cru67="" href="//v.fastcdn.co/u/62ba1c13/64514063-0-RH-UK-EEA---Employee.pdf" id="link-fuklz2cru67">UK/EEA Employee Privacy Notice</a>. </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section section-relative" data-at="section" id="page-block-4k0a8m4cvmr">
+<div class="section-holder-border item-block item-absolute" data-at="section-border"></div>
+<div class="section-holder-overlay item-block item-absolute" data-at="section-overlay"></div>
+<div class="section-block">
+<div class="section-inner section-fit section-relative">
+<div class="widget item-absolute paragraph" data-at="paragraph" id="element-121">
+<div class="contents">
+<p class="x_a79594f1 x_7951f8cb"><span class="x_f2074b6c">© 2022 Robinhood. All rights reserved.</span></p><p class="x_a79594f1 x_7951f8cb"><span class="x_f2074b6c"><br/></span></p><p class="x_a79594f1 x_7951f8cb"><span class="x_f2074b6c">Robinhood means Robinhood Markets, Inc. and its in-application and web experiences with its family of wholly-owned subsidiaries.  Brokerage services are offered through Robinhood Financial LLC, a registered broker dealer with clearing services through Robinhood Securities, LLC, a registered broker dealer. Cryptocurrency services are offered through Robinhood Crypto, LLC. The Robinhood Money spending account is offered through Robinhood Money, LLC, a licensed money transmitter.</span></p><p class="x_a79594f1 x_7951f8cb"><span class="x_f2074b6c"><br/></span></p><p class="x_a79594f1 x_7951f8cb"><span class="x_f2074b6c">All investments involve risks, including possible loss of capital.</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div aria-label="dialog" aria-modal="true" class="popup lightbox item-cover" data-at="modal" id="popup-1llx6ktfw8k" role="dialog" tabindex="0">
+<div class="lightbox-dim" tabindex="-1">
+<div class="lightbox-content">
+<button aria-label="Close dialog" class="lightbox-close lightbox-close-btn item-cover item-absolute" data-at="modal-close" tabindex="0">
+<svg class="lightbox-btn-svg" height="26" width="26" xmlns="http://www.w3.org/2000/svg">
+<circle class="lightbox-close-icon" cx="13" cy="13" r="13"></circle>
+<circle cx="13" cy="13" r="11"></circle>
+<path class="lightbox-close-icon" d="M17.764 16.62l-1.144 1.144c-.158.157-.348.236-.573.236-.224 0-.415-.08-.572-.236L13 15.29l-2.475 2.474c-.157.157-.348.236-.572.236-.225 0-.415-.08-.573-.236L8.236 16.62C8.08 16.462 8 16.272 8 16.047c0-.224.08-.415.236-.572L10.71 13l-2.474-2.475C8.08 10.368 8 10.177 8 9.953c0-.225.08-.415.236-.573L9.38 8.236C9.538 8.08 9.728 8 9.953 8c.224 0 .415.08.572.236L13 10.71l2.475-2.474c.157-.157.348-.236.572-.236.225 0 .415.08.573.236l1.144 1.144c.157.158.236.348.236.573 0 .224-.08.415-.236.572L15.29 13l2.474 2.475c.157.157.236.348.236.572 0 .225-.08.415-.236.573z"></path>
+</svg>
+</button>
+<div data-at="modal-content">
+<div class="widget item-absolute paragraph" data-at="paragraph" id="element-169">
+<div class="contents">
+<p class="x_e6507cf2"><span class="x_7b2817bf"><a class="url-link" data-link-jui6598w88f="" href="https://careers.robinhood.com" id="link-jui6598w88f" target="_blank">Careers</a></span></p>
+</div>
+</div>
+<div class="widget item-absolute paragraph" data-at="paragraph" id="element-170">
+<div class="contents">
+<p class="x_e6507cf2"><span class="x_7b2817bf"><a class="url-link" data-link-1stesce893t="" href="https://earlytalent.robinhood.com" id="link-1stesce893t" target="_blank">Early Talent</a></span></p>
+</div>
+</div>
+<div class="widget item-absolute paragraph" data-at="paragraph" id="element-171">
+<div class="contents">
+<p class="x_e6507cf2"><span class="x_7b2817bf"><a class="url-link" data-link-dmbfhj3prlv="" href="https://robinhood.com/login" id="link-dmbfhj3prlv" target="_blank">Log in</a></span></p>
+</div>
+</div>
+<div class="widget item-absolute" id="element-173">
+<a class="url-link btn item-block" data-at="button" data-link-1g7w923zlg3="" href="https://robinhood.com/signup" id="link-1g7w923zlg3" target="_blank">
+      Sign Up
+  </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Workspace Level Script Footer -->
+<!-- end Workspace Level Script Footer -->
+<!-- custom FOOTER code-->
+<script data-cfasync="false">
+    document.addEventListener('DOMContentLoaded', stickyHeader);
+    window.addEventListener( 'resize', stickyHeader );
+
+    function stickyHeader() {
+        var header = window.__page_generator ? document.querySelector('.section') : document.querySelector('.page-block');
+        var headerHeight = header.clientHeight;
+        header.classList.add("sticky-header");
+        document.querySelector('body').style.marginTop = headerHeight + 'px';
+    }
+    //cards
+    let plusIcon = document.querySelectorAll('.plus-icon');
+    plusIcon.forEach(icon => {
+
+        icon.addEventListener('click', function () {
+            console.log(icon);
+            icon.classList.toggle('minus');
+            icon.nextElementSibling.classList.toggle('card-active')
+            // icon.nextElementSibling.classList.add("card-active");
+
+            // if (icon.classList.nextElementSibling.contains('card-active')) {
+            //     icon.classList.nextElementSibling.remove('card-active')
+            // } else {
+            //     icon.classList.nextElementSibling.add('card-active')
+            // }
+            // // icon.nextElementSibling.classList.add('card-active')
+            if (icon.classList.contains('blue')) {
+                icon.nextElementSibling.classList.add('blue','blue-border')
+            } else if (icon.classList.contains('green')) {
+                icon.nextElementSibling.classList.add('green','green-border')
+            } else if (icon.classList.contains('orange')) {
+                icon.nextElementSibling.classList.add('orange','orange-border')
+            } else if (icon.classList.contains('purple')) {
+                icon.nextElementSibling.classList.add('purple','purple-border')
+            }
+        });
+    });
+</script>
+<!-- end custom FOOTER code-->
+<script src="//g.fastcdn.co/js/Cradle.c9144221d5b5d6147353.js"></script>
+<script async="" defer="" src="//g.fastcdn.co/js/LazyImage.59626ef3f961b8927cb6.js"></script>
+<script src="//g.fastcdn.co/js/Popup.ab8c6ad6abd01061fdfb.js"></script>
+<script async="" src="https://heatmap-events-collector.instapage.com/static/lib.js"></script>
+<!-- Generated at: 2023-12-22T11:09:10.070Z -->
+<!--
+-->
+</body>
+</html>
